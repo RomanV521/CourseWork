@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CourseWork:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CourseWork_jar</output-path>
+    <root id="archive" name="CourseWork.jar">
+      <element id="module-output" name="CourseWork" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/gson-2.8.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

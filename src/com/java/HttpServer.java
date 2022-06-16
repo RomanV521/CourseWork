@@ -52,10 +52,14 @@ public class HttpServer implements HttpHandler {
 
         OutputStream outputStream = httpExchange.getResponseBody();
 
-        response.append(new BufferedReader(new FileReader("src/com/save/api1.txt")).readLine());
+//        if (requestParamValues[0].equals("into")){
+            response.append(new BufferedReader(new FileReader("src/com/save/api1.txt")).readLine());
+//        }
 
-
+        httpExchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");//разрешаем любой
+        httpExchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET");
         httpExchange.sendResponseHeaders(200, response.length());//https://developer.mozilla.org/ru/docs/Web/HTTP/Status
+
         outputStream.write(response.toString().getBytes());
         outputStream.flush();
         outputStream.close();

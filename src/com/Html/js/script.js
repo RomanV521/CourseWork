@@ -1,9 +1,10 @@
-const $list = document.querySelector('.list1');
+const $list1 = document.querySelector('.list1');
+const $list = document.querySelector('.list');
 const $field = document.querySelector('.conText');
 
-let users = null;
+// let users = null;
 
-function templateGenerator(list){
+function templateGenerator(listElem, list){
     let template = '';
     if(list.length){
         for(let i=0; i<list.length; i++){
@@ -12,38 +13,29 @@ function templateGenerator(list){
     } else{
         template +='<li>Not Found!</li>';
     }
-    $list.innerHTML = template;
+    listElem.innerHTML = template;
 }
 
-fetch('http://localhost:8001/back/users/')
-        .then(function(response){
-            return response.json();
-        })
-        .then(function(data){
-            users = data.results;
-            templateGenerator(users);
-        })
-        
+var button = document.querySelector(".button");   
+button.addEventListener("click", function(){
+
+let xhr = new XMLHttpRequest();
 
 
+// 2. Настраиваем его: GET-запрос по URL /article/.../load
+xhr.open('GET', 'http://localhost:8001/back/users');
+// xhr.setRequestHeader("Access-Control-Allow-Origin","null");
 
-$field.addEventListener('input', function(){
-    let conText = this.value.toLowerCase();
-    let filterdUsers = users.filter(function(el){
-        return ~el.name.toLowerCase().indexOf(conText);
-    });
-    templateGenerator(filterdUsers);
-})
+// 3. Отсылаем запрос
+xhr.send();
+
+// 4. Этот код сработает после того, как мы получим ответ сервера
+xhr.onload = function() {
+
+    var usersObj = JSON.parse(this.response);
+    console.log(users);
+    templateGenerator($list, usersObj.users);
+};
 
 
-// new Vue({
-//     mounted: function(){
-//         fetch('https://pokeapi.co/api/v2/pokemon/')
-//             .then(function(response){
-//                 return response.json();
-//             })
-//             .then(function(data){
-//                 console.log(data.results);
-//             })
-//     }
-// });
+});

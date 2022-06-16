@@ -48,9 +48,9 @@ public class Main {
 //        users.SumWeight();
 
 
-        System.out.println(System.lineSeparator() + "Данные:" + System.lineSeparator() + users);
-        db.serialization(users);
-        db.deserialization(users);
+//        System.out.println(System.lineSeparator() + "Данные:" + System.lineSeparator() + users);
+//        db.serialization(users);
+//        db.deserialization(users);
     }
 
     /**
@@ -83,10 +83,22 @@ public class Main {
                 }
             }
 
-            System.out.println(Arrays.deepToString(arr)); // Вывод массива
+//            System.out.println(Arrays.deepToString(arr)); // Вывод массива
             scn.close();
             for (int i = 0; i < num; i++) {
-                users.add(new User(arr[0][rand.nextInt(columns)], arr[1][rand.nextInt(columns)], arr[2][rand.nextInt(columns)], new Baggage(arr[3][rand.nextInt(columns)], arr[4][rand.nextInt(columns)], Integer.parseInt(arr[5][rand.nextInt(columns)]), Double.valueOf(arr[6][rand.nextInt(columns)]), new Date(rand.nextInt(2) + 2022, rand.nextInt(11) + 1, rand.nextInt(30) + 1), new Date(rand.nextInt(2) + 2022))));
+                users.add(new User(arr[0][rand.nextInt(columns)],
+                        arr[1][rand.nextInt(columns)],
+                        arr[2][rand.nextInt(columns)],
+                        new Baggage(arr[3][rand.nextInt(columns)],
+                        arr[4][rand.nextInt(columns)],
+                                Integer.parseInt(arr[5][rand.nextInt(columns)]),
+                                Double.valueOf(arr[6][rand.nextInt(columns)]),
+                                new Date(rand.nextInt(2) + 2022,
+                                        rand.nextInt(11) + 1,
+                                        rand.nextInt(30) + 1),
+                                new Date(rand.nextInt(2) + 2022,
+                                        rand.nextInt(11) + 1,
+                                        rand.nextInt(30) + 1))));
             }
         }
     }
