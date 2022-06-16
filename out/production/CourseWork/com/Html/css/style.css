@@ -1,0 +1,81 @@
+body{
+    background-color: #ededed;
+}
+
+.text{
+    
+}
+
+.topBar{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(235, 235, 235, 0.848);
+    background-image: url(../image/topbar.png);
+    background-position: center 345px;
+    background-size: cover;
+}
+    .topBar .content{
+        background-color: rgba(5, 35, 59, 0.66);
+        width: 100%;
+        height: 100%;
+    }
+        .topBar .content ul{
+            text-align: end;
+            margin-right: 22px;
+            padding-top: 17px;
+        }
+        .topBar .content li{
+            display: inline-flex;
+            margin-right: 25px;
+        }
+            .topBar .content li a{
+                text-decoration: none;
+                color: white;
+                font-family: sans-serif;
+            }
+
+.input{
+    
+}
+    .input .content{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(190 190 190 / 75%);
+        margin: 50px auto;
+    }
+        .input .content .text{
+            font-family: sans-serif;
+        }
+            .input .content .text.top{
+                text-align: center; 
+                padding-top: 12px;
+            }
+            .input .content .text.input{
+                margin-bottom: 1px;
+                margin-left: 17px;
+            }
+        .input .content input{
+            display: flex;
+            margin: auto;
+            margin-bottom: -7px;
+            width: 162px;
+        }
+
+.list{
+
+}
+    .list .content{
+        margin-left: 10px;
+    }
+        .list .content input{
+            margin: 14px 2px;
+            width: 159px;
+            height: 22px;
+        }
+        .list .content li{
+            display: inline-block;
+        }
+            .list .content li p{
+                margin-bottom: -12px;
+                margin-left: 3px;
+            }

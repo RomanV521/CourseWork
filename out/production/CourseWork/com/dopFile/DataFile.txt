@@ -1,0 +1,7 @@
+Seleznev, Terentiev, Sidorov, Saveliev, Ignatov, Stepanov, Gordeev, Popov
+Anton, Andrey, John, Ivan, Yuri, Valentin, Vladislav, Gleb
+Georgievich, Egorovich, Romanovich, Vladimirovich, Mikhailovich, Daniilovich, Fedorovich, Makarovich
+UA5223,AF4219,SU6566,FV9263,SU106,SU107,BA1707,AA071
+S77046557,M86FED0,P204F242,F327465,YYC27670,SQ924H43,L29231882,HU2039K2
+3,6,5,8,4,1,2,9
+13.2,26.11,10.31,40.1,9.5,22.9,18.23,49.15

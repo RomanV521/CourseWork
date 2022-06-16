@@ -1,0 +1,36 @@
+{"Users": [
+    {
+      "Surname": "Flgdsf",
+      "Name": "Po-le",
+      "Patronymic": "Ro_me",
+      "FlightNumber": "SU1322",
+      "BaggageCheckNumber": "2",
+      "AmountOfLuggage": 2,
+      "BaggageWeight": 20.5,
+      "LuggagePlacementTime": "мар. 23, 3912",
+      "PeriodOfPlacement": "мар. 23, 3912"
+    },
+    {
+      "Surname": "Wt",
+      "Name": "Wet",
+      "Patronymic": "Eo_me",
+      "FlightNumber": "FV9263",
+      "BaggageCheckNumber": "2",
+      "AmountOfLuggage": 2,
+      "BaggageWeight": 32.5,
+      "LuggagePlacementTime": "мар. 23, 3912",
+      "PeriodOfPlacement": "мар. 23, 3912"
+    },
+    {
+      "Surname": "Ewyetrytuy",
+      "Name": "Wfdet",
+      "Patronymic": "Eo_me",
+      "FlightNumber": "LU3352",
+      "BaggageCheckNumber": "2",
+      "AmountOfLuggage": 2,
+      "BaggageWeight": 42.5,
+      "LuggagePlacementTime": "мар. 23, 3912",
+      "PeriodOfPlacement": "мар. 23, 3912"
+    }
+  ]
+}
