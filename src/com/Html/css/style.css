@@ -1,5 +1,5 @@
 body{
-    background-color: #ededed;
+    background-color: #dbdbdb;
 }
 
 .text{
@@ -79,3 +79,8 @@ body{
                 margin-bottom: -12px;
                 margin-left: 3px;
             }
+
+.api-information{
+    display: inline-block;
+    list-style: none;
+}
